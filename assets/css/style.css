@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top{
+    padding: 6px 125px;
+    background: rgb(2, 34, 2);
+    color: floralwhite;
+    display: flex;
+    justify-content: space-between;
+}
+.top p{
+    display: inline;
+}
+.top a{
+    color: rgb(108, 233, 108);
+}
+/* header section */
+.header-section{
+    background: rgb(10, 88, 10);
+    padding: 6px 125px;
+    height: 80px;
+    line-height: 80px;
+}
+.header-section h1, .header-section h6{
+    color: floralwhite;
+    display: inline;
+}
+/* nav section */
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    padding: 7px 125px;
+    background: rgb(7, 187, 7);
+    
+    
+}
+nav ul li {
+    list-style: none;
+    display: inline;
+}
+nav ul li a{
+    color: rgb(0, 12, 0);
+    text-decoration: none;
+    padding: 0px 25px;
+    font-weight: bold;
+}
+/* article section */
+
+ article {
+    margin: 15px 20px 0px 20px;
+    padding: 7px;
+    width: 80%;
+    
+}
+
+article  p a{
+    color: green;
+    text-decoration: none;
+}
+article p{
+    text-align: justify;
+    margin: 15px 15px;
+}
+.green{
+    margin-left: 30px ;border-left: 2px solid green;
+    padding-left: 6px;
+}
+aside{
+    display: inline;
+    padding: 0px 10px 10px 25px;
+    width: 20%;
+    background: silver;
+}
+
+aside h1{
+    margin-top: 7px;
+    text-align: center;
+    
+}
+
+aside ul li {
+    list-style: none;
+    padding: auto;
+    text-align: center;
+}
+.list{
+    margin-left: 30px ;
+    padding-left: 6px;  
+}
+
+/* Footer */
+
+footer{
+    background: rgb(5, 81, 5);
+    display: flex;
+    justify-content: space-around;
+    color: gainsboro;
+    
+}
+.footer ul li{
+    list-style: none;
+}
+
+.footer ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: gainsboro;
+    
+    
+}
+
+/* media query */
+
+@media screen and (max-width:991px){
+    .top{
+        height: auto;
+        padding: 10px;
+    }
+    .top a{
+        display: block;
+    }
+    .header-section{
+        padding: 10px;
+    }
+    .nav{
+        padding:0px 10px;
+    }
+    
+}
+
+@media screen and (max-width:767px){
+    .main{
+      display: flex;
+      flex-direction: column;
+    }
+
+    aside{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+}
+@media screen and (max-width:576px) {
+    .header-section{
+        line-height: 20px;
+        text-align: center;
+    }
+    
+}
